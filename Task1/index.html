@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container nav-flex">
+        <h1 class="logo">Tarun's Portfolio</h1>
+        <ul class="nav-links">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="about" class="section about-section">
+    <div class="container about-flex">
+      <div class="profile-pic-wrapper">
+        <img src="/Task1/assets/profile.png" alt="Profile Photo" class="profile-pic" />
+      </div>
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>
+          Hi! I'm <strong>Tarun</strong>, a first-year Electronic and Computer Science Engineering student at <strong>GLA University</strong>.<br>
+          I'm passionate about web development and have already built and deployed my own website project.<br>
+          I love bringing ideas to life with code, and I'm always eager to learn new technologies and tools.<br>
+        </p>
+        <ul>
+          <li> Enthusiastic about building modern, user-friendly websites</li>
+          <li> Strong foundation in programming and engineering principles</li>
+          <li> Quick learner and team player</li>
+          <li> Interested in UI/UX, data visualization, and automation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-cards">
+        <div class="skill-card">
+          <h3>Programming Languages</h3>
+          <ul>
+            <li>React</li>
+            <li>JavaScript</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>C</li>
+            <li>Python</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Tools & Platforms</h3>
+          <ul>
+            <li>VS Code</li>
+            <li>Git & GitHub</li>
+            <li>Power BI</li>
+            <li>Figma</li>
+            <li>AutoCAD</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Other Skills</h3>
+          <ul>
+            <li>Responsive Web Design</li>
+            <li>UI/UX Prototyping</li>
+            <li>Team Collaboration</li>
+            <li>Problem Solving</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-cards">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Project Screenshot"/>
+          <div class="project-content">
+            <h3>Personal Portfolio Website</h3>
+            <p>
+              My first major project—a responsive, modern web portfolio built with HTML, CSS, and JavaScript. It showcases my skills, projects, and contact info.
+            </p>
+            <a href="#" target="_blank">View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Project Screenshot"/>
+          <div class="project-content">
+            <h3>SMART BUS MANAGEMENT SYSTEM</h3>
+            <p>
+              A SMART BUS MANAGEMENT SYSTEM is GOOD combination Hardware and Software good for both College and school transport System.
+            </p>
+            <a href="https://login-30a46.web.app/" target="_blank">View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Project Screenshot"/>
+          <div class="project-content">
+            <h3>UI/UX Figma Prototype</h3>
+            <p>
+              Designed a mobile app prototype in Figma, focusing on clean design and usability for a college event management app.
+            </p>
+            <a href="#" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Tarun | Portfolio Website. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
