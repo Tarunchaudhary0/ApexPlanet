@@ -1,0 +1,156 @@
+/* TODO: Body Style */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 40px;
+  margin: 0;
+}
+
+/* TODO: inner container */
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37),
+    inset 0 0 0.5px rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: fadeIn 0.6s ease;
+  color: #222;
+  position: relative;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* TODO: input */
+.input-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+select,
+input[type="date"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.filters {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.filters button {
+  background-color: #007bff;
+  margin: 0 5px;
+}
+
+.filters button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f1f1f1;
+  margin-bottom: 12px;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-meta {
+  font-size: 14px;
+  color: #555;
+}
+
+/* TODO: priority section */
+
+.priority-low {
+  color: green;
+}
+.priority-medium {
+  color: orange;
+}
+.priority-high {
+  color: red;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.task-actions button {
+  background: #333;
+  font-size: 13px;
+}
+
+.task-actions .delete-btn {
+  background-color: #e74c3c;
+}
+.task-actions .edit-btn {
+  background-color: #f39c12;
+}
+.task-actions .complete-btn {
+  background-color: #2ecc71;
+}
